@@ -1,0 +1,8 @@
+<h1>Fortune</h1>
+
+<% if @fortune.nil? %>
+  <p>Sorry no fortune for you today!</p>
+<% else %>
+  <p>Thanks for asking for your fortune from the cyber fortune teller. Here's your fortune!</p>
+  <h2>"<%= @fortune.fortune %>"</h2>
+<% end %>

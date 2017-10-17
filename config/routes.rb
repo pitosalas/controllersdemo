@@ -1,13 +1,15 @@
 Rails.application.routes.draw do
+  resources :students
+  resources :photos
+  resources :albums
   resources :fortunes
 
   root 'homepages#home'
 
   resources :homepages do
-    get 'home'
   end
 
-  resources :student do
+  resources :students do
     resources :courses
   end
 

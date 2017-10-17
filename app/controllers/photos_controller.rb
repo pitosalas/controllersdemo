@@ -1,9 +1,11 @@
 class PhotosController < ApplicationController
   def index
-    render html: "<strong>Index Action in Photos<strong>"
+    log params.inspect
+    render html: "<strong>Index Action in Photos<strong>".html_safe
   end
 
   def show
-    render html: "<strong>Show Action in Photos</strong>"
+    log params.inspect
+    render html: "<strong>Show Action in Photos</strong>".html_safe
   end
 end
